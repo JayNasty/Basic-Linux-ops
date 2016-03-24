@@ -1,0 +1,11 @@
+#instead of wpa_supplicant, you can add these settings to your '/etc/network/interfaces' file
+#Replacing wlan0 with interface name, static with IP configs
+auto wlan0
+iface wlan0 inet static
+wpa-ssid Network_Name
+wps-psk passphrase
+
+
+#Add startup scripts to /etc/init.d, add shebang, make executeable, then update-rc.d scriptname defaults
+#This holds true to debian based distros
+ 
