@@ -9,7 +9,7 @@ wps-psk passphrase
 #Add startup scripts to /etc/init.d, add shebang, make executeable, then update-rc.d scriptname defaults
 #This holds true to debian based distros
  
-#Bash configurations in .bashrc
+#Bash configurations in .bashrc for ARCH linux
 [[ $- != *i* ]] && return
 reset=$(tput sgr0)
 bold=$(tput bold)
