@@ -9,3 +9,27 @@ wps-psk passphrase
 #Add startup scripts to /etc/init.d, add shebang, make executeable, then update-rc.d scriptname defaults
 #This holds true to debian based distros
  
+#Bash configurations in .bashrc
+[[ $- != *i* ]] && return
+reset=$(tput sgr0)
+bold=$(tput bold)
+black=$(tput setaf 0)
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+yellow=$(tput setaf 3)
+blue=$(tput setaf 4)
+magenta=$(tput setaf 5)
+cyan=$(tput setaf 6)
+white=$(tput setaf 7)
+user_color=$green
+green=$(tput setaf 2)
+yellow=$(tput setaf 3)
+blue=$(tput setaf 4)
+magenta=$(tput setaf 5)
+cyan=$(tput setaf 6)
+white=$(tput setaf 7)
+user_color=$green
+ 
+PS1="\[$reset\]\[\e[3\]m[\[$cyan\]\A\[$reset\]]\[\e[1m\]\[$user_color\]\u\[\e[31m~\e[0m$w\e[33m\e[1m$\e[0m\e[0m\\e[0m "
+
+#
